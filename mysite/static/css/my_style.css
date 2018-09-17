@@ -1,0 +1,36 @@
+
+body {
+    background-color:  rgb(247,247,247);
+
+}
+
+.wrapper{
+	margin-top: 10px
+}
+.container-fluid{
+	background-color:  rgb(247,247,247);
+
+}
+
+.panel{
+	background-color:  rgb(255,255,255);
+	border: 1px solid #E6E9ED;
+	
+	padding: 10px 17px;
+	
+	float:left;
+	width: 100%; 
+	
+	/* max-height: 500px; */
+	/* line-height:50px; */
+}
+
+.pie_chart_style{
+	width:70%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.miner_time{
+	font-size: 150%
+}
