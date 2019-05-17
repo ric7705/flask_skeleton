@@ -1,7 +1,7 @@
 
 from flask import Flask
 
-from mysite.models import db
+from app.models import db
 
 def create_app():
     app = Flask(__name__)
@@ -10,7 +10,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = app.config['DB_CONN']
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    from mysite.routes import about, home, contact, api
+    from app.routes import about, home, contact, api
     db.init_app(app)
 
     app.register_blueprint(api.bp)
